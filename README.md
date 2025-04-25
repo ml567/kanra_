@@ -25,3 +25,7 @@ npm install
 Run the server
 ```bash
 npm run dev
+```
+
+## Live demo
+[Kanra](https://kanra.netlify.app/)
