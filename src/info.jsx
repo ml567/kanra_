@@ -14,9 +14,8 @@ export default function Information () {
         <div className="w-full md:w-1/2 relative">
           <div className="bg-white rounded-3xl shadow-md p-6 relative overflow-hidden">
             
-            {/* Temperature Display */}
-            <div className="ml-6 mt-8 mb-12">
-              <h1 className="text-6xl font-bold text-gray-800">-12°C</h1>
+            <div className="ml-4 sm:ml-6 mt-6 sm:mt-8 mb-8 sm:mb-12">
+              <h1 className="text-5xl sm:text-6xl font-bold text-gray-800">-12°C</h1>
             </div>
             
             {/* Weather Info */}
@@ -77,28 +76,27 @@ export default function Information () {
               </div>
             </div>
             
-            {/* Weather Stats Circle */}
-            <div className="absolute top-8 right-8 bg-white p-4 rounded-xl shadow-md w-48">
-              <div className="grid grid-cols-3 gap-4 text-center">
+            <div className="absolute top-4 sm:top-8 right-4 sm:right-8 bg-white p-2 sm:p-4 rounded-xl shadow-md w-36 sm:w-48">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
                 <div>
                   <div className="flex justify-center text-orange-500 mb-1">
-                    <WiThermometer className="w-6 h-6" />
+                    <WiThermometer className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <div className="text-sm font-medium">-12 C°</div>
+                  <div className="text-xs sm:text-sm font-medium">-12 C°</div>
                   <div className="text-xs text-gray-500">Temp</div>
                 </div>
                 <div>
                   <div className="flex justify-center text-orange-500 mb-1">
-                    <WiStrongWind className="w-6 h-6" />
+                    <WiStrongWind className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <div className="text-sm font-medium">13 km</div>
+                  <div className="text-xs sm:text-sm font-medium">13 km</div>
                   <div className="text-xs text-gray-500">Wind</div>
                 </div>
                 <div>
                   <div className="flex justify-center text-orange-500 mb-1">
-                    <WiSnow className="w-6 h-6" />
+                    <WiSnow className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <div className="text-sm font-medium">80 cm</div>
+                  <div className="text-xs sm:text-sm font-medium">80 cm</div>
                   <div className="text-xs text-gray-500">Snow</div>
                 </div>
               </div>
@@ -106,13 +104,12 @@ export default function Information () {
           </div>
         </div>
         
-        {/* Right Section - Text and Download */}
         <div className="w-full md:w-1/2 flex flex-col justify-center">
           <div className="text-gray-600 font-medium mb-2">GET CONNECTED</div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             It is better to travel well than to arrive 
             <span className="ml-2 inline-block text-orange-500">
-              <MdArrowDownward className="w-8 h-8" />
+              <MdArrowDownward className="w-6 h-6 sm:w-8 sm:h-8" />
             </span>
           </h1>
           
@@ -121,30 +118,29 @@ export default function Information () {
             <p className="text-gray-600">Carries all the information you need while travelling.</p>
           </div>
           
-          {/* App Store Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-  {/* Google Play Button with Thin Rainbow Border */}
-  <a href="#" className="relative p-[3px] rounded-xl bg-gradient-to-r from-red-400 via-yellow-400 to-blue-400 hover:shadow-lg transition-all">
-    <div className="flex items-center justify-center gap-3 px-6 py-3 rounded-xl bg-white">
-      <BsGooglePlay className="w-6 h-6 text-blue-500" />
-      <div>
-        <div className="text-xs text-gray-500">Get it from</div>
-        <div className="font-medium">Google Play</div>
-      </div>
-    </div>
-  </a>
+            {/* Google play store*/}
+            <a href="#" className="relative p-[3px] rounded-xl bg-gradient-to-r from-red-400 via-yellow-400 to-blue-400 hover:shadow-lg transition-all">
+              <div className="flex items-center justify-center gap-3 px-6 py-3 rounded-xl bg-white">
+                <BsGooglePlay className="w-6 h-6 text-blue-500" />
+                <div>
+                  <div className="text-xs text-gray-500">Get it from</div>
+                  <div className="font-medium">Google Play</div>
+                </div>
+              </div>
+            </a>
 
-  {/* Apple Store Button with Thin Black-Ash Border */}
-  <a href="#" className="relative p-[3px] rounded-xl bg-gradient-to-r from-gray-600 to-gray-800 hover:shadow-lg transition-all">
-    <div className="flex items-center justify-center gap-3 px-6 py-3 rounded-xl bg-white">
-      <FaApple className="w-6 h-6 text-gray-800" />
-      <div>
-        <div className="text-xs text-gray-500">Download on the</div>
-        <div className="font-medium">Apple Store</div>
-      </div>
-    </div>
-  </a>
-</div>
+            {/* Apple store */}
+            <a href="#" className="relative p-[3px] rounded-xl bg-gradient-to-r from-gray-600 to-gray-800 hover:shadow-lg transition-all">
+              <div className="flex items-center justify-center gap-3 px-6 py-3 rounded-xl bg-white">
+                <FaApple className="w-6 h-6 text-gray-800" />
+                <div>
+                  <div className="text-xs text-gray-500">Download on the</div>
+                  <div className="font-medium">Apple Store</div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
