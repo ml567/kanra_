@@ -101,7 +101,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="flex flex-col md:flex-row justify-between items-center">
-        <p className="text-sm mb-4 md:mb-0">© 2023 Rylic Studio | All Rights Reserved</p>
+        <p className="text-sm mb-4 md:mb-0">&copy; 2023 Rylic Studio | All Rights Reserved</p>
         <div className="flex space-x-4">
           <div className="text-white font-bold">stripe</div>
           <div className="text-white font-bold">PayPal</div>
